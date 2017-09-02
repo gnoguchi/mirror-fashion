@@ -13,6 +13,14 @@ body{
     color: #003366;
 }
 
+.menu-opcoes a:hover {
+    color: #007dc6;
+}
+
+.menu-opcoes a:active {
+    color: #867dc6;
+}
+
 li{
     display: inline-block;
     margin: 0 20px
@@ -50,12 +58,11 @@ header{
 }
 
 .btn:hover{
-    background-color: green;
+    font-weight: bold;
 }
 
 .busca, .menu-departamentos{
     background-color: #dcd;
-    font-weight: bold;
     text-transform: uppercase;
 
     margin-right: 10px;
@@ -86,7 +93,11 @@ header{
 .busca input[type=search]{
     width: 170px;
 }
-
+.busca{
+    border-top-left-radius:  4px;
+    border-top-right-radius:  4px;
+    
+}
 .busca,
 .menu-departamentos{
     float: left;
@@ -104,3 +115,131 @@ header{
     margin-top: 10px;
     padding-bottom: 10px;
 }
+
+.painel{
+    margin:10px 0;
+    padding: 10px;
+    width: 445px;
+    border-radius: 4px;
+    box-shadow: 1px 1px 4px #999;
+}
+
+.novidades{
+    float:left;
+}
+
+.mais-vendidos{
+    float:right;
+}
+
+.painel li{
+    display:inline-block;
+    width:140px;
+    vertical-align: top;
+
+    margin: 2px;
+    padding-bottom: 10px;
+}
+
+.painel h2{
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+    text-shadow: 3px 3px 2px rgba(255,255,255, 0.8);
+
+}
+
+.painel a {
+    color: #333;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.novidades{
+    background-color: #f5dcdc;
+    background: linear-gradient(#f5dcdc,#bebef4);
+}
+
+.mais-vendidos{
+    background-color: #dcdcf5;
+    background: linear-gradient(#dcdcf5,#f4bebe);
+}
+
+footer{
+    background-image: url(../img/fundo-rodape.png);
+    clear: both;
+    padding: 20px 0;
+}
+
+footer .container{
+    position: relative;
+}
+
+.social{
+    position: absolute;
+    top: 12px;
+    right: 0;
+}
+
+.social li{
+    float: left;
+    margin-left: 25px;
+}
+
+.social a{
+    /*tamanho da imagem*/
+    height: 32px;
+    width: 32px;
+
+    /*image replacement OBS:Usa-se display block para poder definir tamanho - pq por padrao, a tag 'a' é inline */
+    display: block;
+    text-indent: -9999px;
+
+}
+a img{
+    transition: 2000ms;
+}
+a img:hover,img:focus{
+    filter: blur(4px);
+}
+
+.social a[href*="facebook"]{
+    background-image: url(../img/facebook.png)
+}
+
+.social a[href*="twitter"]{
+    background-image: url(../img/twitter.png)
+}
+
+.social a[href*="google"]{
+    background-image: url(../img/googleplus.png);
+}
+
+
+.menu-departamentos li::before{
+    content: '\2192';
+}
+
+a:hover{
+   font-weight: bold;
+}
+
+.menu-departamentos li ul{
+    display: none;
+}
+
+.menu-departamentos li:hover ul{
+    display: block;
+}
+
+.menu-departamentos ul ul li{
+    background-color: #dcd;
+}
+
+
+
+
